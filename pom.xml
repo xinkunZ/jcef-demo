@@ -14,16 +14,16 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencies>
-        <dependency>
-            <groupId>org.panda-lang</groupId>
-            <artifactId>pandomium</artifactId>
-            <version>1.1.4-JCEF-v1.0.10-84.3.8+gc8a556f+chromium-84.0.4147.105</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.panda-lang</groupId>-->
+<!--            <artifactId>pandomium</artifactId>-->
+<!--            <version>1.1.4-JCEF-v1.0.10-84.3.8+gc8a556f+chromium-84.0.4147.105</version>-->
+<!--        </dependency>-->
     </dependencies>
     <repositories>
-        <repository>
-            <id>panda-repository</id>
-            <url>https://repo.panda-lang.org/releases</url>
-        </repository>
+<!--        <repository>-->
+<!--            <id>panda-repository</id>-->
+<!--            <url>https://repo.panda-lang.org/releases</url>-->
+<!--        </repository>-->
 </repositories>
 </project>
