@@ -20,7 +20,7 @@ public class Test {
 //        -Djava.library.path="C:\Users\zhang\AppData\Local\Temp\journey-78"
 //        JourneyBrowserView browser = new JourneyBrowserView("https://google.com");
         final JCefAppConfig instance = JCefAppConfig.getInstance();
-        final CefApp app = CefApp.getInstance(instance.getCefSettings());
+        final CefApp app = CefApp.getInstance(instance.getAppArgs(),instance.getCefSettings());
 //        "http://172.31.239.153"
         String url="https://www.apple.com";
         final CefBrowser browser = app.createClient().createBrowser(url, CefRendering.DEFAULT, false);
