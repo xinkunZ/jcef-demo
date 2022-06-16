@@ -21,12 +21,11 @@ public class Test {
 //        JourneyBrowserView browser = new JourneyBrowserView("https://google.com");
         final JCefAppConfig instance = JCefAppConfig.getInstance();
         final CefApp app = CefApp.getInstance(instance.getCefSettings());
-        final CefBrowser browser = app.createClient()
-                .createBrowser("http://172.31.239.153", CefRendering.DEFAULT, false);
-
+//        "http://172.31.239.153"
+        String url="https://www.apple.com";
+        final CefBrowser browser = app.createClient().createBrowser(url, CefRendering.DEFAULT, false);
         JFrame frame = new JFrame();
         frame.getContentPane().add(browser.getUIComponent(),BorderLayout.CENTER);
-
         frame.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
         frame.addWindowListener(new WindowAdapter() {
             @Override
@@ -36,7 +35,7 @@ public class Test {
             }
         });
 
-        frame.setTitle("Journey");
+        frame.setTitle("demo");
         frame.setSize(1000, 600);
 
         frame.setVisible(true);
