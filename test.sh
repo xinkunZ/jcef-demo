@@ -1,0 +1,16 @@
+/Users/zhangxinkun/Java/jdks/jbrsdk_jcef-17.0.3-aarch64-b469/Contents/Home/bin/jpackage \
+--dest /Users/zhangxinkun/workspace/jcef-demo/target/jpackage \
+--type app-image \
+--app-version '1.0' \
+--copyright 'Copyright' \
+--description 'Description' \
+--name 'jcef-demo' \
+--vendor 'Vendor' \
+--icon /Users/zhangxinkun/workspace/jcef-demo/jpackage/resources/icon.svg \
+--input /Users/zhangxinkun/workspace/jcef-demo/jpackage/input \
+--runtime-image /Users/zhangxinkun/Java/jdks/jbrsdk_jcef-17.0.3-aarch64-b469/Contents/Home \
+--main-jar '/Users/zhangxinkun/workspace/jcef-demo/target/jcef-demo-1.0-SNAPSHOT.jar' \
+--main-class com.demo.Test \
+--java-options '-Dfile.encoding=UTF-8 -Xms256m -Xmx512m' \
+--add-launcher appname-cli=/Users/zhangxinkun/workspace/jcef-demo/target/launcher.8207924087992159044.properties \
+--file-associations /Users/zhangxinkun/workspace/jcef-demo/jpackage/associations.properties
