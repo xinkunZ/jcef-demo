@@ -49,53 +49,53 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-            <plugin>
-                <groupId>com.github.akman</groupId>
-                <artifactId>jpackage-maven-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>jpackage</goal>
-                        </goals>
-                        <configuration>
-                            <toolhome>
-                                /Users/zhangxinkun/Java/jdks/jbrsdk_jcef-17.0.3-aarch64-b469/Contents/Home
-                            </toolhome>
-                            <name>jcef-demo</name>
-                            <type>IMAGE</type>
-                            <input>./jpackage/input</input>
-                            <appversion>1.0</appversion>
-                            <copyright>Copyright</copyright>
-                            <description>Description</description>
-                            <vendor>Vendor</vendor>
-                            <runtimeimage>
-                                /Users/zhangxinkun/Java/jdks/jbrsdk_jcef-17.0.3-aarch64-b469/Contents/Home
-                            </runtimeimage>
-                            <icon>${project.basedir}/jpackage/resources/icon.svg</icon>
-                            <mainjar>
-                                ${project.build.directory}/${project.build.finalName}.${pom.packaging}
-                            </mainjar>
-                            <javaoptions>-Dfile.encoding=UTF-8 -Xms256m -Xmx512m</javaoptions>
+            <!--            <plugin>-->
+            <!--                <groupId>com.github.akman</groupId>-->
+            <!--                <artifactId>jpackage-maven-plugin</artifactId>-->
+            <!--                <executions>-->
+            <!--                    <execution>-->
+            <!--                        <phase>verify</phase>-->
+            <!--                        <goals>-->
+            <!--                            <goal>jpackage</goal>-->
+            <!--                        </goals>-->
+            <!--                        <configuration>-->
+            <!--                            <toolhome>-->
+            <!--                                /Users/zhangxinkun/Java/jdks/jbrsdk_jcef-17.0.3-aarch64-b469/Contents/Home-->
+            <!--                            </toolhome>-->
+            <!--                            <name>jcef-demo</name>-->
+            <!--                            <type>IMAGE</type>-->
+            <!--                            <input>./jpackage/input</input>-->
+            <!--                            <appversion>1.0</appversion>-->
+            <!--                            <copyright>Copyright</copyright>-->
+            <!--                            <description>Description</description>-->
+            <!--                            <vendor>Vendor</vendor>-->
+            <!--                            <runtimeimage>-->
+            <!--                                /Users/zhangxinkun/Java/jdks/jbrsdk_jcef-17.0.3-aarch64-b469/Contents/Home-->
+            <!--                            </runtimeimage>-->
+            <!--                            <icon>${project.basedir}/jpackage/resources/icon.svg</icon>-->
+            <!--                            <mainjar>-->
+            <!--                                ${project.build.directory}/${project.build.finalName}.${pom.packaging}-->
+            <!--                            </mainjar>-->
+            <!--                            <javaoptions>-Dfile.encoding=UTF-8 -Xms256m -Xmx512m</javaoptions>-->
+            <!--                            <addmodules></addmodules>-->
+            <!--                            <addlaunchers>-->
+            <!--                                <addlauncher>-->
+            <!--                                    <name>appname-cli</name>-->
+            <!--                                    <arguments>&#45;&#45;help</arguments>-->
+            <!--                                    <javaoptions>-Xms256m -Xmx512m</javaoptions>-->
+            <!--                                    <appversion>1.0</appversion>-->
+            <!--                                    <icon>${project.basedir/jpackage/resources/icon.svg</icon>-->
+            <!--                                    <winconsole>true</winconsole>-->
+            <!--                                </addlauncher>-->
+            <!--                            </addlaunchers>-->
 
-                            <addlaunchers>
-                                <addlauncher>
-                                    <name>appname-cli</name>
-                                    <arguments>--help</arguments>
-                                    <javaoptions>-Xms256m -Xmx512m</javaoptions>
-                                    <appversion>1.0</appversion>
-                                    <icon>${project.basedir/jpackage/resources/icon.svg</icon>
-                                    <winconsole>true</winconsole>
-                                </addlauncher>
-                            </addlaunchers>
-
-                            <fileassociations>${project.basedir}/jpackage/associations.properties
-                            </fileassociations>
-                            <resourcedir>${project.basedir}/jpackage/resources</resourcedir>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
+            <!--                            <fileassociations>${project.basedir}/jpackage/associations.properties-->
+            <!--                            </fileassociations>-->
+            <!--                            <resourcedir>${project.basedir}/jpackage/resources</resourcedir>-->
+            <!--                        </configuration>-->
+            <!--                    </execution>-->
+            <!--                </executions>-->
+            <!--            </plugin>-->
         </plugins>
     </build>
 
